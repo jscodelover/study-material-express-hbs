@@ -35,10 +35,11 @@ app.use((req, res, next) => {
 
 
 // in express middleware order of the middle ware matter to get maintain.hbs on help.html request put its below 
-// mainatin .hbs middleware command 
-app.use((req, res, next) => {
-    res.render('maintain.hbs');
-});
+// mainatin .hbs middleware command
+
+// app.use((req, res, next) => {
+//     res.render('maintain.hbs');
+// });
 
 
 app.use(express.static(__dirname + '/public'));
